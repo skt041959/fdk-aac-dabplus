@@ -45,6 +45,7 @@ Requirements:
 * Install ZeroMQ 4.0.4 or more recent
   * If your distribution does not include it, take it from
     from http://download.zeromq.org/zeromq-4.0.4.tar.gz
+  * If you want to compile under **cygwin**, install `libzmq5` in cygwin setup.exe
 * JACK audio connection kit (optional)
 * The alsa libraries (libasound2, optional)
 * libvlc and vlc for the plugins (optional)
@@ -61,6 +62,9 @@ This package:
 If you want to use ALSA, JACK and libVLC inputs, please use
 
     ./configure --enable-alsa --enable-jack --enable-vlc
+
+If you want to build under **cygwin**, please use
+    CXXFLAGS=-D_GNU_SOURCE CFLAGS=-D_GNU_SOURCE ./configure
 
 * See the possible scenarios below on how to use the tools
 * use *mot-encoder* to encode images into MOT Slideshow
