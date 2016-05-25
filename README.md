@@ -64,6 +64,7 @@ If you want to use ALSA, JACK and libVLC inputs, please use
     ./configure --enable-alsa --enable-jack --enable-vlc
 
 If you want to build under **cygwin**, please use
+
     CXXFLAGS=-D_GNU_SOURCE CFLAGS=-D_GNU_SOURCE ./configure
 
 * See the possible scenarios below on how to use the tools
